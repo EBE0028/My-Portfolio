@@ -1,0 +1,447 @@
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+    background: white; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue; 
+    border-radius: 20px; 
+    border: 3px solid white ; 
+}
+
+#sayHello {
+    outline-style: solid;
+    color: #5800FF;
+}
+
+#NavItem {
+    border-style: ridge;
+    border-width: thin;
+    border-color: #5800FF;
+    color: black;
+    border-radius: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+    #NavItem :hover {
+        background-color: #5800FF;
+        color: white;
+    }
+
+#NavItemService {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    
+}
+    #NavItemService:hover {
+        color: #5800FF;
+    }
+
+#FirstLookHeading {
+    font-family: 'Gentium Book Plus', serif;
+    text-align:center;
+    font-size:50px;
+    color:darkblue;
+}
+
+#FirstLookSubHead {
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    
+}
+
+#Avatar {
+    display: flex;
+    justify-content: center;
+}
+
+#Intro {
+    background-color: #5800FF;
+    margin-top: -20px;
+    height: 50%;
+    
+
+}
+
+#AboutAvatar {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#shortIntro {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 2px
+}
+#Para {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-family: 'Asap Condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px;
+    position: relative;
+    height:60vh;
+    width:80%;
+    max-width: 250px;
+    max-height: 350px;
+    box-shadow: 0 5px 50px -6px black;
+}
+
+.card-title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #6184a8;
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+.card-desc {
+    display: block;
+    overflow: hidden;
+    font-size: 1.2rem;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding:15px 5%;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+.card:hover .card-desc {
+    opacity: 1;
+    height: 90%;
+    width:95%;
+}
+
+#Icon {
+    font-size: 50px;
+    text-align: center;
+    
+    margin: auto;
+}
+#ContentCard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 80%;
+}
+
+#elementCard
+{
+    align-content:center;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.containerB .cardB .iconB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c73df;
+    background-size: 100% 100%;
+    
+}
+
+    .containerB .cardB .iconB .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: #fff;
+    }
+
+.containerB .cardB .slideB {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+    .containerB .cardB .slideB.slide1B {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: .5s;
+        transform: translateY(50px);
+    }
+
+.containerB .cardB:hover .slideB.slide1B {
+    transform: translateY(0px);
+}
+
+.containerB .cardB .slideB.slide2B {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.containerB .cardB:hover .slideB.slide2B {
+    transform: translateY(0);
+}
+
+.containerB .cardB .slideB.slide2B::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c73df;
+}
+
+.containerB .cardB .slideB.slide2B .contentB p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.containerB .cardB .slideB.slide2B .contentB h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}
+
+#Fitness {
+    background-image: url('Images/Fitness.jpg');
+}
+#OTT{
+    background-image: url('Images/Sling.jpg');
+}
+#Pandemic {
+    background-image: url('Images/PandemicImg.jpg');
+}
+#Project {
+    background-image: url('Images/Team effort.jpg');
+}
+#Clinic {
+    background-image: url('Images/ClinicPA.jpg');
+}
+#Shop {
+    background-image: url('Images/Shop x.jpg');
+}
+.animation i{
+    font-size:20px;
+    animation:ani 4s linear infinite
+}
+.animation{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:absolute;
+    top:-200px;
+}
+
+@keyframes ani{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+    50% {
+        opacity:1;
+    }
+    70% {
+        opacity:1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+.animation i:nth-child(1)
+{
+    animation-delay:2.9s;
+    width:25px;
+}
+.animation i:nth-child(2) {
+    animation-delay: 1.5s;
+    width: 15px;
+}
+.animation i:nth-child(3) {
+    animation-delay: 3.7s;
+    width: 20px;
+}
+.animation i:nth-child(4) {
+    animation-delay: 1.6s;
+    width: 10px;
+}
+.animation i:nth-child(5) {
+    animation-delay: 4.1s;
+    width: 15px;
+}
+.animation i:nth-child(6) {
+    animation-delay: 2.2s;
+    width: 25px;
+}
+
+.animation i:nth-child(7) {
+    animation-delay: 3.1s;
+    width: 15px;
+}
+
+.animation i:nth-child(8) {
+    animation-delay: 3.5s;
+    width: 20px;
+}
+
+.animation i:nth-child(9) {
+    animation-delay: 2.1s;
+    width: 10px;
+}
+
+.animation i:nth-child(10) {
+    animation-delay: 1.5s;
+    width: 15px;
+}
+
+.button {
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+    .button:hover {
+        transition-duration: 0.1s;
+        background-color: #3A3A3A;
+    }
+
+    .button:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 4em;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        box-shadow: 0 0 10px 40px white;
+    }
+
+    .button:active:after {
+        box-shadow: 0 0 0 0 white;
+        position: absolute;
+        border-radius: 4em;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transition: 0s;
+    }
+
+    .button:active {
+        top: 1px;
+    }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footericons {
+    color:darkblue;
+    text-decoration:none;
+    
+}
+#FormHeading {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+#preloader{
+    background:white url(Images/FinalLoader.gif) no-repeat center center;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:100;
+}
+
+.gotobtn
+{
+    position: fixed;
+    width:50px;
+    height:50px;
+    opacity: 1;
+    bottom:25px;
+    right:20px;
+    text-decoration: none;
+    text-align:center;
+    line-height: 50px;
+    color:#5800FF;
+    font-size:30px;
+    cursor: pointer;
+}

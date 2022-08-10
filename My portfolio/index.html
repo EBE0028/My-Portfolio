@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebenezer</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="stylesheet" href="bootstrap/bootstrap-4.3.1-dist_css_bootstrap.css" />
+  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../src/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/MyPortfolio.styles.css" asp-append-version="true" />
+  <link rel="stylesheet" href="css.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/Testing.css" asp-append-version="true" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"></link>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Viga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Gentium+Book+Plus:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b866b1eaf8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+    
+
+ <script>
+    function About() {
+        document.getElementById('about').scrollIntoView({ behavior: "smooth" });
+    }
+    function Project() {
+        document.getElementById('Projects').scrollIntoView({ behavior: "smooth" });
+    }
+    function Exp() {
+        document.getElementById('Experience').scrollIntoView({ behavior: "smooth" });
+    }
+    function Contact() {
+        document.getElementById('ContactForm').scrollIntoView({ behavior: "smooth" });
+  
+    }
+    function goup()
+    {
+        document.getElementById('top').scrollIntoView({ behavior: "smooth" });
+    }
+  
+  
+  </script>
+  <body>
+    <div id="preloader"></div>
+    <a class="gotobtn" onclick="goup()"><i class="fa-solid fa-angle-up"></i></a>
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  ">
+            <div class="container-fluid">
+                <img src="Images/PortLogo.jpg" height="100" width="100" style="float:left" id="top" />
+                <div class="navbar-collapse collapse d-sm-inline-flex ">
+                    <ul class="navbar-nav  " style="float:right">
+                        <li class="nav-item" id="NavItemService">
+                            <a id="NavItemService" class="nav-link  " onclick="About()" style="cursor: pointer;"> About</a>
+
+                        </li>
+                        <li class="nav-item" id="NavItemService">
+                            <a id="NavItemService" class="nav-link  " onclick="Project()" style="cursor: pointer;"> Project</a>
+                        </li>
+                        <li class="nav-item" id="NavItemService">
+                            <a id="NavItemService" class="nav-link  " onclick="Exp()" style="cursor: pointer;"> Experience</a>
+                        </li>
+                        <li class="nav-item" id="NavItemService">
+                            <a id="NavItemService" class="nav-link  " style="cursor: pointer;" href="Images/Ebenezer (1).pdf"> Resume</a>
+                        </li>
+                        <li class="nav-item" id="NavItem">
+                            <a id="NavItem" class="nav-link  " onclick="Contact()" style="cursor: pointer;"> Say Hello</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <div class="container">
+      <div>
+        <div class="animation">
+    
+            <i class="fa-solid fa-circle" style="color:purple;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:red;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:yellow;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:blue;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:hotpink;font-size:10px"></i>
+    
+            <i class="fa-solid fa-circle" style="color:green;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:blueviolet;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:dodgerblue;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:fuchsia;font-size:10px"></i>
+            <i class="fa-solid fa-circle" style="color:brown;font-size:10px"></i>
+    
+        </div>
+        <br />
+        <div>
+            <h1 id="FirstLookHeading">Full stack developer & Automation Tester</h1>
+            <h3 id="FirstLookSubHead">I design and code beautifully simple things, and I love what I do.</h3>
+            <br />
+            <div id="Avatar">
+                <img src="Images/Avatar.svg" />
+            </div>
+        </div>
+        <h1 style="visibility: hidden;">as</h1>
+        <div class="sliding" class="div"  >
+            
+            <div id="AboutAvatar">
+                <img src="Images/CodAvatar.jpg" width="70%" height="30%" data-aos="fade-left"/>
+            </div>
+            <br />
+            <div id="Intro" class="jumbotron sliding" data-aos="fade-right">
+                <div id="shortIntro" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <h1 id="about" class="sliding" data-move-y="30%" data-move-x="-30%">Hi, I’m Ebe. Nice to meet you.</h1>
+    
+                    <br />
+                    <br />
+                </div>
+                <br />
+                <p id="Para" class="sliding" data-move-y="30%" data-move-x="30%">My journey is been incredible Ha!, let me brief you. I am a software engineer with one plus year of experience currently exploring software development and testing. I love participating in software product-building hackathons which eventually became my hobby. Well, I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. Please hover or click the cards below to know more about me. </p>
+                <br />
+            </div>
+        </div>
+    
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="cards">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="card " data-aos="slide-right">
+                                <img src="Images/DesignLogo.jpg" alt="Front Tech" height="200" width="200" style="margin:auto" />
+                                <div class="card-desc ContentCard">
+                                    <div class="card-desc">
+                                        <h5 style="text-align:center;font-family: 'Alegreya', serif;color:#5800FF"> Front-End language I speak</h5>
+                                        <p style="text-align:center"><i class="fa-brands fa-html5 " id="Icon" style="color:red"></i></p>
+                                        <p style="text-align:center"><i class="fa-brands fa-css3 " id="Icon" style="color:dodgerblue"></i></p>
+                                        <p style="text-align:center"><i class="fa-brands fa-react " id="Icon" style="color:deepskyblue"></i></p>
+                                        <p style="text-align:center"><i class="fa-brands fa-angular " id="Icon" style="color:darkred"></i></p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="card" data-aos="slide-right">
+                                <img src="Images/BackEndLogo.jpg" alt="Front Tech" height="200" width="200" style="margin:auto" />
+                                <div class="card-desc ContentCard">
+                                    <div class="card-desc">
+                                        <h5 style="text-align:center;font-family: 'Alegreya', serif;color:#5800FF"> Back-End language I speak</h5>
+                                        <p id="Icon" style="text-align:center"><i class="fa-solid fa-c" style="color:navy"></i>#</p>
+                                        <p id="Icon" style="text-align:center"><i class="fa-brands fa-python" style="color:navy"></i></p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="card" data-aos="slide-left">
+                                <img src="Images/DataBase&Cloud.jpg" alt="Front Tech" height="200" width="200" style="margin:auto" />
+                                <div class="card-desc ContentCard">
+                                    <div class="card-desc">
+                                        <h5 style="text-align:center;font-family: 'Alegreya', serif;color:#5800FF"> Database & Cloud I know</h5>
+                                        <img src="Images/MsSql.png" height="500" style="width:70px;height:70px;margin-left:auto;margin-right:auto" />
+                                        <img src="Images/MongoDB.png" height="500" style="width:70px;height:70px;margin-left:auto;margin-right:auto" />
+                                        <img src="Images/azure (1).png" height="500" style="width:60px;height:60px;margin-left:auto;margin-right:auto" />
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="card" data-aos="slide-left">
+                                <img src="Images/Testing.jpg" alt="Front Tech" height="200" width="200" style="margin:auto" />
+                                <div class="card-desc ContentCard">
+                                    <div class="card-desc">
+                                        <h5 style="text-align:center;font-family: 'Alegreya', serif;color:#5800FF"> I Love fixing bugs</h5>
+                                        <img src="Images/Tosca2.jpg" style="width:120px;height:120px;margin-left:auto;margin-right:auto" />
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div>
+            <h1 id="FirstLookHeading">My Recent work</h1>
+            <div class="containerB">
+                <div class="row">
+                    <div class="cards" id="Projects" >
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB " data-aos="flip-right">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="Fitness">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            Top brands for Fitness products are available just a few clicks away.
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://mystorefit.netlify.app/">Explore</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB " data-aos="flip-left">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="OTT">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            Sling is an OTT platform were you can watch unlimited movies and series.
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://github.com/EBE0028/OTT-Application">Source Code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB" class="cardB " data-aos="flip-left">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="Pandemic">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            PWS Helps you to travel safely in public transits .
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://github.com/EBE0028/Pandemic-public-transit-guidence">Source Code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB" class="cardB " data-aos="flip-left">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="Project">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            Having trouble in tracking your people's work Dnt worry Team effort application got you covered.
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://github.com/EBE0028/Team-Effort">Source Code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB " data-aos="flip-right">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="Clinic">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            A Console application which manages an entire clinic
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://github.com/EBE0028/Team-Effort">Source Code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="cardB " data-aos="flip-left">
+                                <div class="slideB slide1B">
+                                    <div class="contentB iconB" id="Shop">
+                                    </div>
+                                </div>
+                                <div class="slideB slide2B">
+                                    <div class="contentB">
+                                        <h5 style="font-family: 'Signika Negative', sans-serif;">
+                                            The One-stop Shopping Destination
+                                        </h5>
+                                        <p><a type="button" class="btn btn-primary" href="https://github.com/EBE0028/ECommerce">Source Code</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        </div>
+        <br />
+        <br />
+        <div id="Experience">
+            <h1 id="FirstLookHeading">I'm proud to have collaborated with some awesome companies:</h1>
+            <div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 " data-aos="zoom-in-left">
+                        <img src="Images/Cogni.png" height="180" width="300" alt="eurofins IT" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in-up" >
+                        <img src="Images/ibm.svg" height="200" width="300" alt="IBM" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6" data-aos="zoom-in-right">
+                        <img src="Images/eurofins.jpg" height="200" width="300" alt="" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 " data-aos="zoom-in-left">
+                        <img src="Images/TATA.png" height="200" width="300" alt="IBM" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 " data-aos="zoom-in-up">
+                        <img src="Images/aGS.jpg" height="180" width="300" alt="IBM" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 " data-aos="zoom-in-right">
+                        <img src="Images/Syndicate.png" height="180" width="300" alt="IBM" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div id="ContactForm">
+            <div class="jumbotron" id="Intro">
+                <h2 id="FirstLookHeading" style="color:azure">Get In Touch</h2>
+                <h4 id="FirstLookSubHead" style="color:azure;font-size:20px">I’m  currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</h4>
+                <br />
+                <div class="form-group">
+                    <form  id="contact" method="post" action="https://formspree.io/f/mnqrqnor">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h5 id="FormHeading">Your Name</h5>
+                                <input name="name" asp-for="name" id="name" type="text" class="form-control" id="NameInp" aria-describedby="name" placeholder="Your Name" onkeydown="return /[a-z]/i.test(event.key)" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h5 id="FormHeading">Email Address</h5>
+                                <input name="email" asp-for="Email" id="email" type="email" class="form-control" id="exampleInputEmail" aria-describedby="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 id="FormHeading">Your Message</h5>
+                            <textarea name="message" asp-for="description" id="des" class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                        </div>
+                        <br />
+                        <div class="center">
+                            <button class="button" type="submit" style="margin-left:auto;margin-right:auto" >Start a conversation</button>
+                        </div>
+                        
+                    </form>
+                   
+    
+                </div>
+    
+            </div>
+        </div>
+    
+        <br />
+    
+        <div>
+            <hr />
+            <div>
+                <h2 style="text-align:center;letter-spacing: 5px;">
+                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/ebestephan1/" id="footericons"></a>
+                    <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/ebe.ebe.522" id="footericons"></a>
+                    <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/ebenezer-r-388980191/" id="footericons"></a>
+                    <a class="fa-brands fa-github" href="https://github.com/EBE0028" id="footericons"></a>
+    
+                </h2>
+            </div>
+            <h4 id="FirstLookSubHead">
+                Handcrafted by me &#169;
+                <script>
+                    var CurrentYear = new Date().getFullYear()
+                    document.write(CurrentYear)
+                </script>
+            </h4>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, 
+        delay: 0, 
+        duration: 600, 
+        easing: 'ease', 
+        mirror: true, 
+        anchorPlacement:'top-bottom '
+
+      });
+    </script>
+  </body>
+</html>
